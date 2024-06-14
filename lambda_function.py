@@ -33,9 +33,9 @@ def lambda_handler(event, context):
 
     X_test = []
 
-   for i in range(0,200):
+    for i in range(0,200):
 
-      X_test.append(inputs[i:i+200, 0])
+       X_test.append(inputs[i:i+200, 0])
 
 
     X_test = np.array(X_test)
