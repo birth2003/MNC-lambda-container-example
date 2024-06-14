@@ -1,0 +1,1 @@
+# MNC-lambda-container-example
