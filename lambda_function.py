@@ -55,8 +55,6 @@ def lambda_handler(event, context):
     var = str(drop_var) 
     packetdrop = "(Average PacketDrop: " + avg + ", PacketDropVariance: " + var +")"
 
-    file_list = ['/var/task/lambda-container-example/test.jpeg']
-
     return {
         'packetdrop': packetdrop
     }
