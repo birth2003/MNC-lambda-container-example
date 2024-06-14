@@ -11,11 +11,10 @@ RUN yum install git -y
 RUN git clone https://github.com/birth2003/MNC-lambda-container-example
 
 # install packages
-RUN pip install -r lambda-container-example/requirements.txt
+RUN pip install -r MNC-lambda-container-example/requirements.txt
 
 # /var/task/ 경로로 실행파일 복사
-RUN cp lambda-container-example/lambda_function.py /var/task/
-RUN cp lambda-container-example/imagenet_class_index.json /var/task/
+RUN cp MNC-lambda-container-example/lambda_function.py /var/task/
 
 # 실행 시 lambda_function.py의 lambda_handler 함수를 실행시킴을 정의
 CMD ["lambda_function.lambda_handler"]
