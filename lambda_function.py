@@ -16,6 +16,6 @@ def lambda_handler(event, context):
     }
     
     return {
-        'Predicted:', prediction_result
+        'Predicted': prediction_result
     }
     
