@@ -10,7 +10,12 @@ def lambda_handler(event, context):
     preds = model.predict(img_array)
     prediction = decode_predictions(preds, top=1)[0]
 
+    prediction_result = {
+        'class': prediction[0][1],
+        'confidence': float(prediction[0][2])
+    }
+    
     return {
-        'Predicted:', prediction
+        'Predicted:', prediction_result
     }
     
