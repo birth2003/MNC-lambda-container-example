@@ -6,7 +6,7 @@ import time
 
 def lambda_handler(event, context):
     model = MobileNet(weights='imagenet')
-    img_array = np.load("preprocessed_image.npy")
+    img_array = np.load("/var/task/MNC-lambda-container-example/preprocessed_image.npy")
     preds = model.predict(img_array)
 
     return {
