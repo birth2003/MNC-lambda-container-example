@@ -1,5 +1,6 @@
-from keras.applications import MobileNet
-from keras.applications.mobilenet import decode_predictions
+import tensorflow as tf
+from tensorflow.keras.applications import MobileNet
+from tensorflow.keras.applications.mobilenet import decode_predictions
 import numpy as np
 import time
 
